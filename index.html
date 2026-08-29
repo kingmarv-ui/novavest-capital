@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaVest Capital — Invest With Clarity</title>
+  <meta name="description" content="NovaVest Capital provides professionally presented investment opportunities across digital assets and publicly traded technology companies. Investing involves risk." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 950: '#060a13', 900: '#0b1120', 800: '#111827', 700: '#1e293b' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-navy-950 text-slate-100">
+  <header class="site-header">
+    <div class="container-main flex items-center justify-between h-16 md:h-18">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center font-bold text-sm">N</div>
+        <span class="font-semibold text-lg tracking-tight">NovaVest <span class="text-slate-400 font-normal">Capital</span></span>
+      </a>
+      <nav class="desktop-nav hidden lg:flex items-center gap-7">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="pages/investments.html" class="nav-link">Investments</a>
+        <a href="pages/strategies.html" class="nav-link">Strategies</a>
+        <a href="pages/market-insights.html" class="nav-link">Market Insights</a>
+        <a href="pages/about.html" class="nav-link">About</a>
+        <a href="pages/fees.html" class="nav-link">Fees</a>
+        <a href="pages/faq.html" class="nav-link">FAQ</a>
+      </nav>
+      <div class="desktop-nav hidden lg:flex items-center gap-3">
+        <a href="pages/login.html" class="nav-link">Login</a>
+        <a href="pages/register.html" class="btn-primary text-sm py-2 px-4">Get Started</a>
+      </div>
+      <button id="mobile-menu-btn" class="mobile-nav lg:hidden p-2 rounded-lg hover:bg-white/5" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden mobile-nav flex-col gap-1 px-4 pb-4 border-t border-white/5">
+      <a href="index.html" class="py-2.5 nav-link">Home</a>
+      <a href="pages/investments.html" class="py-2.5 nav-link">Investments</a>
+      <a href="pages/strategies.html" class="py-2.5 nav-link">Strategies</a>
+      <a href="pages/market-insights.html" class="py-2.5 nav-link">Market Insights</a>
+      <a href="pages/about.html" class="py-2.5 nav-link">About</a>
+      <a href="pages/fees.html" class="py-2.5 nav-link">Fees</a>
+      <a href="pages/faq.html" class="py-2.5 nav-link">FAQ</a>
+      <a href="pages/login.html" class="py-2.5 nav-link">Login</a>
+      <a href="pages/register.html" class="btn-primary mt-2 justify-center">Get Started</a>
+    </div>
+  </header>
+  <main>
+    <section class="relative overflow-hidden bg-grid">
+      <div class="absolute inset-0 bg-gradient-to-b from-blue-500/5 via-transparent to-transparent pointer-events-none"></div>
+      <div class="container-main pt-16 md:pt-24 pb-16 md:pb-20">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div class="animate-in">
+            <p class="text-sm font-medium text-blue-400 mb-4 tracking-wide uppercase">Investment Management & Education</p>
+            <h1 class="text-4xl md:text-5xl lg:text-[3.25rem] font-bold leading-tight tracking-tight mb-5">
+              Invest With Clarity.<br />
+              <span class="text-gradient">Build With Discipline.</span>
+            </h1>
+            <p class="text-lg text-slate-300 mb-8 max-w-lg leading-relaxed">
+              Explore professionally presented investment opportunities across digital assets and publicly traded technology companies.
+            </p>
+            <div class="flex flex-wrap gap-3 mb-10">
+              <a href="pages/investments.html" class="btn-primary">Explore Investment Options</a>
+              <a href="pages/about.html#how-it-works" class="btn-secondary">Learn How It Works</a>
+            </div>
+            <div class="risk-notice max-w-xl">
+              <strong class="text-red-300">Risk notice:</strong> Investing involves risk. Asset values can rise or fall, and investors may lose some or all of their capital. Past performance does not guarantee future results.
+            </div>
+          </div>
+          <div class="glass p-5 md:p-6 animate-in" style="animation-delay: 0.1s">
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <p class="text-xs text-slate-400 mb-0.5">Portfolio Overview</p>
+                <p class="text-2xl font-semibold tracking-tight">$25,480.00</p>
+              </div>
+              <span class="demo-badge">Illustrative / Demo Data</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3 mb-5">
+              <div class="rounded-xl bg-white/5 p-3.5">
+                <div class="flex items-center gap-2 mb-1"><span class="w-2 h-2 rounded-full bg-orange-400"></span><span class="text-xs text-slate-400">Bitcoin (BTC)</span></div>
+                <p class="font-semibold">32%</p><p class="text-xs text-slate-400">$8,153.60</p>
+              </div>
+              <div class="rounded-xl bg-white/5 p-3.5">
+                <div class="flex items-center gap-2 mb-1"><span class="w-2 h-2 rounded-full bg-red-400"></span><span class="text-xs text-slate-400">Tesla (TSLA)</span></div>
+                <p class="font-semibold">28%</p><p class="text-xs text-slate-400">$7,134.40</p>
+              </div>
+              <div class="rounded-xl bg-white/5 p-3.5">
+                <div class="flex items-center gap-2 mb-1"><span class="w-2 h-2 rounded-full bg-indigo-400"></span><span class="text-xs text-slate-400">Ethereum (ETH)</span></div>
+                <p class="font-semibold">20%</p><p class="text-xs text-slate-400">$5,096.00</p>
+              </div>
+              <div class="rounded-xl bg-white/5 p-3.5">
+                <div class="flex items-center gap-2 mb-1"><span class="w-2 h-2 rounded-full bg-emerald-400"></span><span class="text-xs text-slate-400">Cash</span></div>
+                <p class="font-semibold">20%</p><p class="text-xs text-slate-400">$5,096.00</p>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="flex justify-between text-xs text-slate-400 mb-1.5"><span>Allocation</span><span>Demo only</span></div>
+              <div class="flex h-2.5 rounded-full overflow-hidden gap-0.5">
+                <div class="bg-orange-400" style="width:32%"></div>
+                <div class="bg-red-400" style="width:28%"></div>
+                <div class="bg-indigo-400" style="width:20%"></div>
+                <div class="bg-emerald-400" style="width:20%"></div>
+              </div>
+            </div>
+            <p class="text-[11px] text-slate-500 mt-3">All figures shown are illustrative demo data for prototype purposes only. Not actual customer balances or returns.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 md:py-20 border-t border-white/5">
+      <div class="container-main">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl md:text-3xl font-bold mb-3">Investment Areas</h2>
+          <p class="text-slate-400 max-w-2xl mx-auto">Diversified exposure across digital assets and technology equities, presented with clear risk information.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5">
+          <div class="glass glass-hover p-6">
+            <div class="w-10 h-10 rounded-xl bg-orange-500/15 flex items-center justify-center mb-4 text-orange-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+            <h3 class="text-lg font-semibold mb-2">Digital Assets</h3>
+            <p class="text-sm text-slate-400 mb-4">Bitcoin, Ethereum, and other eligible digital assets. High volatility; suitable for investors who understand crypto-specific risks.</p>
+            <a href="pages/investments.html#digital" class="text-sm text-blue-400 hover:text-blue-300 font-medium">Learn more →</a>
+          </div>
+          <div class="glass glass-hover p-6">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/15 flex items-center justify-center mb-4 text-blue-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg></div>
+            <h3 class="text-lg font-semibold mb-2">Technology Equities</h3>
+            <p class="text-sm text-slate-400 mb-4">Publicly traded technology companies, including Tesla (TSLA). Equity markets carry company-specific and market risks.</p>
+            <a href="pages/investments.html#tech" class="text-sm text-blue-400 hover:text-blue-300 font-medium">Learn more →</a>
+          </div>
+          <div class="glass glass-hover p-6">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/15 flex items-center justify-center mb-4 text-emerald-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+            <h3 class="text-lg font-semibold mb-2">Diversified Strategies</h3>
+            <p class="text-sm text-slate-400 mb-4">Combinations of eligible assets based on selected risk profile and investment objectives. Diversification does not eliminate risk.</p>
+            <a href="pages/strategies.html" class="text-sm text-blue-400 hover:text-blue-300 font-medium">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 md:py-20 bg-navy-900/50 border-t border-white/5">
+      <div class="container-main">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl md:text-3xl font-bold mb-3">How It Works</h2>
+          <p class="text-slate-400 max-w-xl mx-auto">A clear, structured process designed for transparency and informed decision-making.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="text-center"><div class="w-12 h-12 rounded-full bg-blue-500/15 text-blue-400 font-bold text-lg flex items-center justify-center mx-auto mb-4">01</div><h3 class="font-semibold mb-2">Create an Account</h3><p class="text-sm text-slate-400">Register and complete required identity and suitability information.</p></div>
+          <div class="text-center"><div class="w-12 h-12 rounded-full bg-blue-500/15 text-blue-400 font-bold text-lg flex items-center justify-center mx-auto mb-4">02</div><h3 class="font-semibold mb-2">Choose Your Strategy</h3><p class="text-sm text-slate-400">Review available strategies, objectives, fees, and risks.</p></div>
+          <div class="text-center"><div class="w-12 h-12 rounded-full bg-blue-500/15 text-blue-400 font-bold text-lg flex items-center justify-center mx-auto mb-4">03</div><h3 class="font-semibold mb-2">Fund Your Account</h3><p class="text-sm text-slate-400">Add funds using supported, legally compliant payment methods.</p></div>
+          <div class="text-center"><div class="w-12 h-12 rounded-full bg-blue-500/15 text-blue-400 font-bold text-lg flex items-center justify-center mx-auto mb-4">04</div><h3 class="font-semibold mb-2">Monitor Your Portfolio</h3><p class="text-sm text-slate-400">View allocation, transactions, performance, and market information.</p></div>
+        </div>
+        <p class="text-center text-sm text-slate-500 mt-10 max-w-2xl mx-auto">Availability of investment-management and custody services depends on applicable laws, customer location, and regulatory requirements.</p>
+        <div class="text-center mt-8"><a href="pages/register.html" class="btn-primary">Get Started</a></div>
+      </div>
+    </section>
+    <section class="py-16 md:py-20 border-t border-white/5">
+      <div class="container-main text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to explore with clarity?</h2>
+        <p class="text-slate-400 mb-8 max-w-lg mx-auto">Create an account to review strategies, educational materials, and portfolio tools. No investment is risk-free.</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <a href="pages/register.html" class="btn-primary">Create an Account</a>
+          <a href="pages/strategies.html" class="btn-secondary">View Strategies</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer py-12">
+    <div class="container-main">
+      <div class="grid md:grid-cols-4 gap-8 mb-10">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-7 h-7 rounded-md bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center font-bold text-xs">N</div>
+            <span class="font-semibold">NovaVest Capital</span>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed">A fictional platform prototype for investment education and portfolio presentation. Not a live financial service.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-sm mb-3 text-slate-200">Platform</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="pages/investments.html" class="hover:text-white">Investments</a></li>
+            <li><a href="pages/strategies.html" class="hover:text-white">Strategies</a></li>
+            <li><a href="pages/fees.html" class="hover:text-white">Fees</a></li>
+            <li><a href="pages/market-insights.html" class="hover:text-white">Market Insights</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-sm mb-3 text-slate-200">Company</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="pages/about.html" class="hover:text-white">About</a></li>
+            <li><a href="pages/faq.html" class="hover:text-white">FAQ</a></li>
+            <li><a href="pages/support.html" class="hover:text-white">Support</a></li>
+            <li><a href="pages/referral.html" class="hover:text-white">Referral Program</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-sm mb-3 text-slate-200">Legal</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="pages/terms.html" class="hover:text-white">Terms of Service</a></li>
+            <li><a href="pages/privacy.html" class="hover:text-white">Privacy Policy</a></li>
+            <li><a href="pages/risk-disclosure.html" class="hover:text-white">Risk Disclosure</a></li>
+            <li><a href="pages/crypto-risk.html" class="hover:text-white">Crypto Risk Disclosure</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-white/5 text-xs text-slate-500 space-y-2">
+        <p>© 2026 NovaVest Capital. All rights reserved. This is a frontend prototype. No real financial services are offered.</p>
+        <p>Regulatory Status: [Insert verified registration/licensing information before launch]. NovaVest Capital does not claim to be SEC-registered, FINRA-registered, FCA-regulated, FDIC-insured, or SIPC-protected unless verified information is supplied.</p>
+        <p>Investing involves risk of loss. Cryptocurrency is highly volatile. Past performance is not indicative of future results.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
