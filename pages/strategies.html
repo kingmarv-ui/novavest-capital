@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investment Strategies — NovaVest Capital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{950:'#060a13',900:'#0b1120',800:'#111827',700:'#1e293b'}}}}}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-navy-950 text-slate-100">
+  <header class="site-header">
+    <div class="container-main flex items-center justify-between h-16">
+      <a href="../index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center font-bold text-sm">N</div>
+        <span class="font-semibold text-lg">NovaVest <span class="text-slate-400 font-normal">Capital</span></span>
+      </a>
+      <nav class="desktop-nav hidden lg:flex items-center gap-7">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="investments.html" class="nav-link">Investments</a>
+        <a href="strategies.html" class="nav-link active">Strategies</a>
+        <a href="market-insights.html" class="nav-link">Market Insights</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="fees.html" class="nav-link">Fees</a>
+      </nav>
+      <div class="desktop-nav hidden lg:flex items-center gap-3">
+        <a href="login.html" class="nav-link">Login</a>
+        <a href="register.html" class="btn-primary text-sm py-2 px-4">Get Started</a>
+      </div>
+      <button id="mobile-menu-btn" class="mobile-nav lg:hidden p-2" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden mobile-nav flex-col gap-1 px-4 pb-4 border-t border-white/5">
+      <a href="../index.html" class="py-2.5 nav-link">Home</a>
+      <a href="strategies.html" class="py-2.5 nav-link">Strategies</a>
+      <a href="register.html" class="btn-primary mt-2 justify-center">Get Started</a>
+    </div>
+  </header>
+  <main class="py-14">
+    <div class="container-main">
+      <h1 class="text-3xl md:text-4xl font-bold mb-3">Investment Strategies</h1>
+      <p class="text-slate-400 max-w-2xl mb-4">Select a strategy aligned with your objectives and risk tolerance. No strategy guarantees returns or capital preservation.</p>
+      <p class="text-xs text-amber-400/90 mb-10 demo-badge inline-flex">All allocations and fees shown are illustrative prototype examples</p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="glass p-6">
+          <div class="flex items-center justify-between mb-4"><h2 class="text-lg font-semibold">Conservative</h2><span class="pill pill-green">Lower Risk</span></div>
+          <p class="text-sm text-slate-400 mb-5">Lower-risk objective with emphasis on capital preservation and diversification.</p>
+          <div class="space-y-3 mb-5 text-sm">
+            <div class="flex justify-between"><span class="text-slate-400">Objective</span><span>Capital preservation & modest growth</span></div>
+            <div><div class="flex justify-between mb-1"><span class="text-slate-400">Illustrative allocation</span></div>
+              <div class="text-xs space-y-1 text-slate-300">
+                <div class="flex justify-between"><span>Cash / equivalents</span><span>40%</span></div>
+                <div class="flex justify-between"><span>Tech equities</span><span>35%</span></div>
+                <div class="flex justify-between"><span>Digital assets</span><span>25%</span></div>
+              </div>
+            </div>
+            <div class="flex justify-between"><span class="text-slate-400">Risk level</span><span>Lower</span></div>
+            <div class="flex justify-between"><span class="text-slate-400">Time horizon</span><span>3+ years</span></div>
+            <div class="flex justify-between"><span class="text-slate-400">Fees (example)</span><span>0.75% p.a. management</span></div>
+          </div>
+          <p class="text-xs text-slate-500 mb-4">Important risks: Market risk, interest-rate risk, residual crypto volatility. Diversification does not guarantee against loss.</p>
+          <a href="register.html" class="btn-secondary text-sm w-full justify-center">Select Strategy</a>
+        </div>
+        <div class="glass p-6">
+          <div class="flex items-center justify-between mb-4"><h2 class="text-lg font-semibold">Balanced</h2><span class="pill pill-blue">Moderate Risk</span></div>
+          <p class="text-sm text-slate-400 mb-5">Combination of growth potential and diversification.</p>
+          <div class="space-y-3 mb-5 text-sm">
+            <div class="flex justify-between"><span class="text-slate-400">Objective</span><span>Growth with moderate volatility</span></div>
+            <div><div class="flex justify-between mb-1"><span class="text-slate-400">Illustrative allocation</span></div>
+              <div class="text-xs space-y-1 text-slate-300">
+                <div class="flex justify-between"><span>Tech equities</span><span>40%</span></div>
+                <div class="flex justify-between"><span>Digital assets</span><span>35%</span></div>
+                <div class="flex justify-between"><span>Cash</span><span>25%</span></div>
+              </div>
+            </div>
+            <div class="flex justify-between"><span class="text-slate-400">Risk level</span><span>Moderate</span></div>
+            <div class="flex justify-between"><span class="text-slate-400">Time horizon</span><span>5+ years</span></div>
+            <div class="flex justify-between"><span class="text-slate-400">Fees (example)</span><span>0.90% p.a. management</span></div>
+          </div>
+          <p class="text-xs text-slate-500 mb-4">Important risks: Equity and crypto market risk, drawdowns possible. No guaranteed returns.</p>
+          <a href="register.html" class="btn-secondary text-sm w-full justify-center">Select Strategy</a>
+        </div>
+        <div class="glass p-6">
+          <div class="flex items-center justify-between mb-4"><h2 class="text-lg font-semibold">Growth</h2><span class="pill pill-amber">Higher Risk</span></div>
+          <p class="text-sm text-slate-400 mb-5">Higher-risk strategy focused on long-term growth opportunities.</p>
+          <div class="space-y-3 mb-5 text-sm">
+            <div class="flex justify-between"><span class="text-slate-400">Objective</span><span>Long-term capital appreciation</span></div>
+            <div><div class="flex justify-between mb-1"><span class="text-slate-400">Illustrative allocation</span></div>
+              <div class="text-xs space-y-1 text-slate-300">
+                <div class="flex justify-between"><span>Tech equities</span><span>50%</span></div>
+                <div class="flex justify-between"><span>Digital assets</span><span>40%</span></div>
+                <div class="flex justify-between"><span>Cash</span><span>10%</span></div>
+              </div>
+            </div>
+            <div class="flex justify-between"><span class="text-slate-400">Risk level</span><span>Higher</span></div>
+            <div class="flex justify-between"><span class="text-slate-400">Time horizon</span><span>7+ years</span></div>
+            <div class="flex justify-between"><span class="text-slate-400">Fees (example)</span><span>1.00% p.a. management</span></div>
+          </div>
+          <p class="text-xs text-slate-500 mb-4">Important risks: Significant volatility and potential for substantial losses. Suitable only for investors with high risk tolerance.</p>
+          <a href="register.html" class="btn-secondary text-sm w-full justify-center">Select Strategy</a>
+        </div>
+        <div class="glass p-6">
+          <div class="flex items-center justify-between mb-4"><h2 class="text-lg font-semibold">Digital Asset Focus</h2><span class="pill pill-red">High Volatility</span></div>
+          <p class="text-sm text-slate-400 mb-5">Higher-volatility strategy focused primarily on eligible digital assets.</p>
+          <div class="space-y-3 mb-5 text-sm">
+            <div class="flex justify-between"><span class="text-slate-400">Objective</span><span>Crypto-centric growth exposure</span></div>
+            <div><div class="flex justify-between mb-1"><span class="text-slate-400">Illustrative allocation</span></div>
+              <div class="text-xs space-y-1 text-slate-300">
+                <div class="flex justify-between"><span>Bitcoin</span><span>45%</span></div>
+                <div class="flex justify-between"><span>Ethereum</span><span>35%</span></div>
+                <div class="flex justify-between"><span>Other digital / cash</span><span>20%</span></div>
+              </div>
+            </div>
+            <div class="flex justify-between"><span class="text-slate-400">Risk level</span><span>Very High</span></div>
+            <div class="flex justify-between"><span class="text-slate-400">Time horizon</span><span>5+ years</span></div>
+            <div class="flex justify-between"><span class="text-slate-400">Fees (example)</span><span>1.10% p.a. + network fees</span></div>
+          </div>
+          <p class="text-xs text-slate-500 mb-4">Important risks: Extreme volatility; regulatory, custody, and technology risks. Possibility of total loss of capital.</p>
+          <a href="register.html" class="btn-secondary text-sm w-full justify-center">Select Strategy</a>
+        </div>
+      </div>
+      <div class="risk-notice mt-10">Fees shown are examples for prototype purposes and must be replaced with the company’s actual fees before launch. No guaranteed APY, monthly income, ROI, or profit is offered or implied.</div>
+    </div>
+  </main>
+  <footer class="site-footer py-8"><div class="container-main text-xs text-slate-500"><p>© 2026 NovaVest Capital. Prototype only.</p></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
