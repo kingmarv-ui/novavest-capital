@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — NovaVest Capital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{950:'#060a13',900:'#0b1120',800:'#111827',700:'#1e293b'}}}}}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-navy-950 text-slate-100">
+  <header class="site-header">
+    <div class="container-main flex items-center justify-between h-16">
+      <a href="../index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center font-bold text-sm">N</div>
+        <span class="font-semibold text-lg">NovaVest <span class="text-slate-400 font-normal">Capital</span></span>
+      </a>
+      <nav class="desktop-nav hidden lg:flex items-center gap-7">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="investments.html" class="nav-link">Investments</a>
+        <a href="strategies.html" class="nav-link">Strategies</a>
+        <a href="market-insights.html" class="nav-link">Market Insights</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="fees.html" class="nav-link">Fees</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+      </nav>
+      <div class="desktop-nav hidden lg:flex items-center gap-3">
+        <a href="login.html" class="nav-link">Login</a>
+        <a href="register.html" class="btn-primary text-sm py-2 px-4">Get Started</a>
+      </div>
+      <button id="mobile-menu-btn" class="mobile-nav lg:hidden p-2 rounded-lg hover:bg-white/5" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden mobile-nav flex-col gap-1 px-4 pb-4 border-t border-white/5">
+      <a href="../index.html" class="py-2.5 nav-link">Home</a>
+      <a href="investments.html" class="py-2.5 nav-link">Investments</a>
+      <a href="strategies.html" class="py-2.5 nav-link">Strategies</a>
+      <a href="about.html" class="py-2.5 nav-link">About</a>
+      <a href="fees.html" class="py-2.5 nav-link">Fees</a>
+      <a href="login.html" class="py-2.5 nav-link">Login</a>
+      <a href="register.html" class="btn-primary mt-2 justify-center">Get Started</a>
+    </div>
+  </header>
+  <main>
+    <section class="py-16 md:py-20 bg-grid">
+      <div class="container-main max-w-3xl">
+        <p class="text-sm font-medium text-blue-400 mb-3 uppercase tracking-wide">About NovaVest Capital</p>
+        <h1 class="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Institutional discipline meets modern markets</h1>
+        <p class="text-lg text-slate-300 leading-relaxed mb-8">NovaVest Capital is a fictional platform designed to present investment opportunities across digital assets and publicly traded technology companies in a clear, professional, and risk-aware manner.</p>
+      </div>
+    </section>
+    <section class="py-12 border-t border-white/5">
+      <div class="container-main max-w-3xl space-y-10">
+        <div><h2 class="text-xl font-semibold mb-3">Mission</h2><p class="text-slate-300 leading-relaxed">To help individuals explore and understand investment options in cryptocurrency and technology equities through transparent information, educational resources, and structured portfolio tools—without hype or guaranteed-return claims.</p></div>
+        <div><h2 class="text-xl font-semibold mb-3">Investment Philosophy</h2><p class="text-slate-300 leading-relaxed">We believe informed investors make better decisions. Our approach emphasizes clarity of objectives, awareness of risk, diversification where appropriate, and a long-term mindset. We do not promote get-rich-quick schemes or risk-free claims.</p></div>
+        <div><h2 class="text-xl font-semibold mb-3">Risk Management Approach</h2><p class="text-slate-300 leading-relaxed">Risk is inherent in all investments. Digital assets in particular can experience extreme price volatility. Technology stocks can be affected by company-specific events, sector rotations, and broader market conditions. Portfolio construction should reflect the investor’s risk tolerance, time horizon, and financial situation. Diversification does not eliminate the risk of loss.</p></div>
+        <div><h2 class="text-xl font-semibold mb-3">Transparency</h2><p class="text-slate-300 leading-relaxed">Fees, risks, and product characteristics should be disclosed clearly. This prototype uses illustrative data only. In a production environment, live market data, actual fee schedules, and verified regulatory information would replace placeholders.</p></div>
+        <div><h2 class="text-xl font-semibold mb-3">Investor Education</h2><p class="text-slate-300 leading-relaxed">Educational content on market mechanics, risk management, and the characteristics of digital assets and equities is a core part of the platform. Understanding comes before allocation.</p></div>
+        <div><h2 class="text-xl font-semibold mb-3">Responsible Investing</h2><p class="text-slate-300 leading-relaxed">Only invest capital you can afford to lose. Consider your overall financial picture, seek independent professional advice where appropriate, and never invest based solely on marketing materials.</p></div>
+        <div class="glass p-6">
+          <h3 class="font-semibold mb-2">Regulatory Status</h3>
+          <p class="text-sm text-slate-400">[Insert verified registration/licensing information before launch]</p>
+          <p class="text-xs text-slate-500 mt-3">This prototype does not claim that NovaVest Capital is SEC-registered, FINRA-registered, FCA-regulated, licensed, government-approved, FDIC-insured, or SIPC-protected.</p>
+        </div>
+      </div>
+    </section>
+    <section id="how-it-works" class="py-16 border-t border-white/5 bg-navy-900/40">
+      <div class="container-main">
+        <h2 class="text-2xl font-bold mb-10 text-center">How It Works</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div class="glass p-5"><div class="text-blue-400 font-bold text-sm mb-2">01</div><h3 class="font-semibold mb-2">Create an Account</h3><p class="text-sm text-slate-400">Register and complete the required identity and suitability information.</p></div>
+          <div class="glass p-5"><div class="text-blue-400 font-bold text-sm mb-2">02</div><h3 class="font-semibold mb-2">Choose Your Strategy</h3><p class="text-sm text-slate-400">Review available investment strategies, objectives, fees, and risks.</p></div>
+          <div class="glass p-5"><div class="text-blue-400 font-bold text-sm mb-2">03</div><h3 class="font-semibold mb-2">Fund Your Account</h3><p class="text-sm text-slate-400">Add funds using supported, legally compliant payment methods.</p></div>
+          <div class="glass p-5"><div class="text-blue-400 font-bold text-sm mb-2">04</div><h3 class="font-semibold mb-2">Monitor Your Portfolio</h3><p class="text-sm text-slate-400">View portfolio allocation, transactions, performance, and relevant market information.</p></div>
+        </div>
+        <p class="text-center text-sm text-slate-500 mt-8 max-w-2xl mx-auto">Availability of investment-management and custody services depends on applicable laws, customer location, and regulatory requirements.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer py-10">
+    <div class="container-main text-xs text-slate-500">
+      <p>© 2026 NovaVest Capital. Prototype only. Investing involves risk of loss.</p>
+      <div class="mt-3 flex flex-wrap gap-4">
+        <a href="terms.html" class="hover:text-white">Terms</a>
+        <a href="privacy.html" class="hover:text-white">Privacy</a>
+        <a href="risk-disclosure.html" class="hover:text-white">Risk Disclosure</a>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
