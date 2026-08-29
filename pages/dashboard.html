@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Dashboard — NovaVest Capital (Demo)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{950:'#060a13',900:'#0b1120',800:'#111827',700:'#1e293b'}}}}}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-navy-950 text-slate-100">
+  <header class="site-header">
+    <div class="container-main flex items-center justify-between h-16">
+      <a href="../index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center font-bold text-sm">N</div>
+        <span class="font-semibold text-lg">NovaVest <span class="text-slate-400 font-normal">Capital</span></span>
+      </a>
+      <div class="flex items-center gap-3">
+        <span class="demo-badge">Demo Account</span>
+        <a href="login.html" class="text-sm text-slate-400 hover:text-white">Sign out</a>
+      </div>
+    </div>
+  </header>
+  <main class="py-8">
+    <div class="container-main">
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+        <div>
+          <h1 class="text-2xl font-bold">Portfolio Dashboard</h1>
+          <p class="text-sm text-slate-400">All values are DEMO / ILLUSTRATIVE DATA only</p>
+        </div>
+        <div class="flex gap-2">
+          <a href="deposit.html" class="btn-secondary text-sm py-2">Deposit</a>
+          <a href="deposit.html#withdraw" class="btn-secondary text-sm py-2">Withdraw</a>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div class="glass p-5"><p class="text-xs text-slate-400 mb-1">Total Portfolio Value</p><p class="text-2xl font-semibold">$25,480.00</p><p class="text-xs text-emerald-400 mt-1">+2.4% (demo period)</p></div>
+        <div class="glass p-5"><p class="text-xs text-slate-400 mb-1">Available Cash</p><p class="text-2xl font-semibold">$5,096.00</p><p class="text-xs text-slate-500 mt-1">20% of portfolio</p></div>
+        <div class="glass p-5"><p class="text-xs text-slate-400 mb-1">Strategy</p><p class="text-lg font-semibold">Balanced</p><p class="text-xs text-slate-500 mt-1">Moderate risk profile</p></div>
+        <div class="glass p-5"><p class="text-xs text-slate-400 mb-1">Risk Profile</p><p class="text-lg font-semibold">Moderate</p><p class="text-xs text-slate-500 mt-1">Based on suitability (demo)</p></div>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-6">
+        <div class="lg:col-span-2 space-y-6">
+          <div class="glass p-5">
+            <div class="flex items-center justify-between mb-4"><h2 class="font-semibold">Asset Allocation</h2><span class="demo-badge">Illustrative</span></div>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-sm mb-1.5"><span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-orange-400"></span> Bitcoin (BTC)</span><span>32% · $8,153.60</span></div>
+                <div class="alloc-bar"><div class="alloc-fill bg-orange-400" style="width:32%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1.5"><span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-red-400"></span> Tesla (TSLA)</span><span>28% · $7,134.40</span></div>
+                <div class="alloc-bar"><div class="alloc-fill bg-red-400" style="width:28%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1.5"><span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-indigo-400"></span> Ethereum (ETH)</span><span>20% · $5,096.00</span></div>
+                <div class="alloc-bar"><div class="alloc-fill bg-indigo-400" style="width:20%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1.5"><span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> Cash</span><span>20% · $5,096.00</span></div>
+                <div class="alloc-bar"><div class="alloc-fill bg-emerald-400" style="width:20%"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="glass p-5">
+            <div class="flex items-center justify-between mb-4"><h2 class="font-semibold">Portfolio Performance</h2><span class="demo-badge">Demo Chart</span></div>
+            <div id="demo-performance-chart" class="chart-placeholder h-44 w-full"></div>
+            <p class="text-[11px] text-slate-500 mt-2">Illustrative performance only. Not actual investment results.</p>
+          </div>
+          <div class="glass p-5 overflow-x-auto">
+            <h2 class="font-semibold mb-4">Transaction History <span class="demo-badge ml-2">Demo</span></h2>
+            <table class="data-table min-w-[500px]">
+              <thead><tr><th>Date</th><th>Type</th><th>Asset</th><th>Amount</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>2026-08-20</td><td>Buy</td><td>BTC</td><td>$1,200.00</td><td><span class="pill pill-green">Completed</span></td></tr>
+                <tr><td>2026-08-15</td><td>Deposit</td><td>Cash</td><td>$5,000.00</td><td><span class="pill pill-green">Completed</span></td></tr>
+                <tr><td>2026-08-10</td><td>Buy</td><td>TSLA</td><td>$2,500.00</td><td><span class="pill pill-green">Completed</span></td></tr>
+                <tr><td>2026-08-05</td><td>Buy</td><td>ETH</td><td>$800.00</td><td><span class="pill pill-green">Completed</span></td></tr>
+              </tbody>
+            </table>
+            <p class="text-[11px] text-slate-500 mt-3">Demo transactions only. No real funds were moved.</p>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <div class="glass p-5">
+            <h2 class="font-semibold mb-4">Positions</h2>
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between items-center py-2 border-b border-white/5"><div><p class="font-medium">BTC</p><p class="text-xs text-slate-400">0.125 BTC (demo)</p></div><p class="font-medium">$8,153.60</p></div>
+              <div class="flex justify-between items-center py-2 border-b border-white/5"><div><p class="font-medium">TSLA</p><p class="text-xs text-slate-400">28 shares (demo)</p></div><p class="font-medium">$7,134.40</p></div>
+              <div class="flex justify-between items-center py-2 border-b border-white/5"><div><p class="font-medium">ETH</p><p class="text-xs text-slate-400">1.85 ETH (demo)</p></div><p class="font-medium">$5,096.00</p></div>
+              <div class="flex justify-between items-center py-2"><div><p class="font-medium">Cash</p><p class="text-xs text-slate-400">USD</p></div><p class="font-medium">$5,096.00</p></div>
+            </div>
+          </div>
+          <div class="glass p-5">
+            <h2 class="font-semibold mb-3">Notifications</h2>
+            <ul class="space-y-3 text-sm">
+              <li class="flex gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-400 mt-1.5 flex-shrink-0"></span><span class="text-slate-300">Welcome to the demo dashboard. No real account is linked.</span></li>
+              <li class="flex gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-500 mt-1.5 flex-shrink-0"></span><span class="text-slate-400">Market data is illustrative only.</span></li>
+            </ul>
+          </div>
+          <div class="glass p-5">
+            <h2 class="font-semibold mb-3">Quick Links</h2>
+            <div class="space-y-2 text-sm">
+              <a href="deposit.html" class="block text-blue-400 hover:text-blue-300">Fund account</a>
+              <a href="strategies.html" class="block text-blue-400 hover:text-blue-300">Change strategy</a>
+              <a href="support.html" class="block text-blue-400 hover:text-blue-300">Support</a>
+              <a href="fees.html" class="block text-blue-400 hover:text-blue-300">Fee schedule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="risk-notice mt-8">This dashboard displays DEMO / ILLUSTRATIVE DATA only. Figures do not represent actual customer balances, transactions, or investment performance. In production, this interface would connect to authenticated backend services.</div>
+    </div>
+  </main>
+  <footer class="site-footer py-6"><div class="container-main text-xs text-slate-500">© 2026 NovaVest Capital. Prototype dashboard.</div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
