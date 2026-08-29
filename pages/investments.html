@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investment Areas — NovaVest Capital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{950:'#060a13',900:'#0b1120',800:'#111827',700:'#1e293b'}}}}}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-navy-950 text-slate-100">
+  <header class="site-header">
+    <div class="container-main flex items-center justify-between h-16">
+      <a href="../index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center font-bold text-sm">N</div>
+        <span class="font-semibold text-lg">NovaVest <span class="text-slate-400 font-normal">Capital</span></span>
+      </a>
+      <nav class="desktop-nav hidden lg:flex items-center gap-7">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="investments.html" class="nav-link active">Investments</a>
+        <a href="strategies.html" class="nav-link">Strategies</a>
+        <a href="market-insights.html" class="nav-link">Market Insights</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="fees.html" class="nav-link">Fees</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+      </nav>
+      <div class="desktop-nav hidden lg:flex items-center gap-3">
+        <a href="login.html" class="nav-link">Login</a>
+        <a href="register.html" class="btn-primary text-sm py-2 px-4">Get Started</a>
+      </div>
+      <button id="mobile-menu-btn" class="mobile-nav lg:hidden p-2" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden mobile-nav flex-col gap-1 px-4 pb-4 border-t border-white/5">
+      <a href="../index.html" class="py-2.5 nav-link">Home</a>
+      <a href="investments.html" class="py-2.5 nav-link">Investments</a>
+      <a href="strategies.html" class="py-2.5 nav-link">Strategies</a>
+      <a href="about.html" class="py-2.5 nav-link">About</a>
+      <a href="register.html" class="btn-primary mt-2 justify-center">Get Started</a>
+    </div>
+  </header>
+  <main>
+    <section class="py-14 md:py-18">
+      <div class="container-main">
+        <h1 class="text-3xl md:text-4xl font-bold mb-3">Investment Areas</h1>
+        <p class="text-slate-400 max-w-2xl mb-10">Explore eligible asset classes. Every investment carries risk. Nothing presented here is risk-free or guaranteed.</p>
+        <div class="space-y-8">
+          <article id="digital" class="glass p-6 md:p-8">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
+              <div><h2 class="text-xl font-semibold mb-1">Digital Assets</h2><p class="text-sm text-slate-400">Bitcoin (BTC), Ethereum (ETH), and other eligible digital assets</p></div>
+              <span class="pill pill-amber">Higher Volatility</span>
+            </div>
+            <p class="text-slate-300 mb-6 leading-relaxed">Digital assets are decentralized digital representations of value that may be used as a medium of exchange or store of value. Prices can move rapidly in either direction based on adoption, regulation, technology developments, and market sentiment.</p>
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div><h3 class="text-sm font-semibold text-emerald-400 mb-2">Potential benefits</h3><ul class="text-sm text-slate-300 space-y-1.5 list-disc list-inside"><li>Exposure to a growing asset class</li><li>Potential for long-term appreciation (not guaranteed)</li><li>24/7 market accessibility in many jurisdictions</li></ul></div>
+              <div><h3 class="text-sm font-semibold text-red-400 mb-2">Key risks</h3><ul class="text-sm text-slate-300 space-y-1.5 list-disc list-inside"><li>Extreme price volatility; possibility of total loss</li><li>Regulatory uncertainty and potential restrictions</li><li>Custody, cybersecurity, and operational risks</li><li>Liquidity risk during stressed markets</li></ul></div>
+            </div>
+            <div class="flex flex-wrap gap-4 text-sm text-slate-400 mb-6"><span><strong class="text-slate-200">Suggested horizon:</strong> Medium to long term (3+ years)</span></div>
+            <a href="strategies.html" class="btn-secondary text-sm">Learn More</a>
+          </article>
+          <article id="tech" class="glass p-6 md:p-8">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
+              <div><h2 class="text-xl font-semibold mb-1">Technology Equities</h2><p class="text-sm text-slate-400">Publicly traded technology companies, including Tesla (TSLA)</p></div>
+              <span class="pill pill-blue">Market Risk</span>
+            </div>
+            <p class="text-slate-300 mb-6 leading-relaxed">Equity investments represent ownership stakes in companies. Technology sector stocks can offer growth potential but are subject to company-specific news, competitive dynamics, valuation changes, and overall equity market conditions.</p>
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div><h3 class="text-sm font-semibold text-emerald-400 mb-2">Potential benefits</h3><ul class="text-sm text-slate-300 space-y-1.5 list-disc list-inside"><li>Participation in innovation-driven companies</li><li>Liquidity via public markets (subject to market hours)</li><li>Potential capital appreciation and, in some cases, dividends</li></ul></div>
+              <div><h3 class="text-sm font-semibold text-red-400 mb-2">Key risks</h3><ul class="text-sm text-slate-300 space-y-1.5 list-disc list-inside"><li>Share prices can decline significantly</li><li>Company-specific and sector concentration risk</li><li>Macroeconomic and interest-rate sensitivity</li><li>No guarantee of positive returns</li></ul></div>
+            </div>
+            <div class="flex flex-wrap gap-4 text-sm text-slate-400 mb-6"><span><strong class="text-slate-200">Suggested horizon:</strong> Medium to long term (3–7+ years)</span></div>
+            <a href="strategies.html" class="btn-secondary text-sm">Learn More</a>
+          </article>
+          <article id="diversified" class="glass p-6 md:p-8">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
+              <div><h2 class="text-xl font-semibold mb-1">Diversified Strategies</h2><p class="text-sm text-slate-400">Combinations of eligible assets based on risk profile</p></div>
+              <span class="pill pill-green">Profile-Based</span>
+            </div>
+            <p class="text-slate-300 mb-6 leading-relaxed">Diversified strategies allocate across digital assets, technology equities, and cash or cash equivalents according to a selected risk profile. Diversification aims to reduce concentration risk but does not eliminate the possibility of loss.</p>
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div><h3 class="text-sm font-semibold text-emerald-400 mb-2">Potential benefits</h3><ul class="text-sm text-slate-300 space-y-1.5 list-disc list-inside"><li>Broader exposure across asset types</li><li>Alignment with stated risk tolerance</li><li>Structured rebalancing framework (where applicable)</li></ul></div>
+              <div><h3 class="text-sm font-semibold text-red-400 mb-2">Key risks</h3><ul class="text-sm text-slate-300 space-y-1.5 list-disc list-inside"><li>All underlying asset risks still apply</li><li>Correlation can rise in stressed markets</li><li>Fees may reduce net returns</li><li>No strategy guarantees capital preservation or gains</li></ul></div>
+            </div>
+            <div class="flex flex-wrap gap-4 text-sm text-slate-400 mb-6"><span><strong class="text-slate-200">Suggested horizon:</strong> Matches strategy (typically 3+ years)</span></div>
+            <a href="strategies.html" class="btn-secondary text-sm">View Strategies</a>
+          </article>
+        </div>
+        <div class="risk-notice mt-10">Investing involves risk. Asset values can rise or fall. You may lose some or all of your capital. Past performance does not guarantee future results. Nothing on this page constitutes investment advice.</div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer py-8"><div class="container-main text-xs text-slate-500"><p>© 2026 NovaVest Capital. Prototype. Not a live financial service.</p></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
