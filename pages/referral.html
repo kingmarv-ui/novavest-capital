@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Referral Program — NovaVest Capital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{950:'#060a13',900:'#0b1120'}}}}}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-navy-950 text-slate-100">
+  <header class="site-header">
+    <div class="container-main flex items-center justify-between h-16">
+      <a href="../index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center font-bold text-sm">N</div>
+        <span class="font-semibold">NovaVest Capital</span>
+      </a>
+    </div>
+  </header>
+  <main class="py-14">
+    <div class="container-main max-w-2xl">
+      <h1 class="text-3xl font-bold mb-3">Referral / Investor Program</h1>
+      <p class="text-slate-400 mb-6">Registered users may obtain a referral link where legally permitted and where the platform offers such a program.</p>
+      <div class="glass p-6 mb-6">
+        <p class="text-sm text-slate-300 mb-4">Referral programs may be subject to applicable laws and platform eligibility requirements.</p>
+        <div class="flex gap-2">
+          <input type="text" class="input-field flex-1" value="https://novavest.example/r/DEMO123" readonly />
+          <button class="btn-secondary text-sm" onclick="navigator.clipboard?.writeText('https://novavest.example/r/DEMO123'); alert('Demo link copied (illustrative only).')">Copy</button>
+        </div>
+        <p class="text-xs text-slate-500 mt-3">Demo link only. No rewards are calculated or paid in this prototype.</p>
+      </div>
+      <p class="text-sm text-slate-400">We do not use misleading language such as “earn unlimited passive income by recruiting investors.” Any rewards structure would be disclosed clearly and comply with applicable rules.</p>
+    </div>
+  </main>
+  <footer class="site-footer py-6"><div class="container-main text-xs text-slate-500">© 2026 NovaVest Capital</div></footer>
+</body>
+</html>
