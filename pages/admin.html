@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard — NovaVest Capital (Demo)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{950:'#060a13',900:'#0b1120'}}}}}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-navy-950 text-slate-100">
+  <header class="site-header">
+    <div class="container-main flex items-center justify-between h-16">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center font-bold text-sm">N</div>
+        <span class="font-semibold">Admin · NovaVest</span>
+      </div>
+      <span class="demo-badge">Role-based access · Demo only</span>
+    </div>
+  </header>
+  <main class="py-8">
+    <div class="container-main">
+      <h1 class="text-2xl font-bold mb-6">Administrator Interface</h1>
+      <p class="text-sm text-slate-400 mb-8">Illustrative admin view. In production: strict role-based access control (RBAC), audit logging, and separation from customer-facing systems.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div class="glass p-4"><p class="text-xs text-slate-400">Customer accounts</p><p class="text-xl font-semibold">1,248</p><p class="text-[11px] text-slate-500">Demo count</p></div>
+        <div class="glass p-4"><p class="text-xs text-slate-400">Pending KYC</p><p class="text-xl font-semibold">37</p><p class="text-[11px] text-amber-400">Requires review</p></div>
+        <div class="glass p-4"><p class="text-xs text-slate-400">Open support tickets</p><p class="text-xl font-semibold">12</p></div>
+        <div class="glass p-4"><p class="text-xs text-slate-400">Compliance alerts</p><p class="text-xl font-semibold">3</p><p class="text-[11px] text-red-400">Action needed</p></div>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-6">
+        <div class="glass p-5 overflow-x-auto">
+          <h2 class="font-semibold mb-4">Recent accounts <span class="demo-badge ml-2">Demo</span></h2>
+          <table class="data-table min-w-[400px]">
+            <thead><tr><th>ID</th><th>Status</th><th>KYC</th><th>Balance (demo)</th></tr></thead>
+            <tbody>
+              <tr><td>NV-10492</td><td><span class="pill pill-green">Active</span></td><td><span class="pill pill-green">Verified</span></td><td>$12,400</td></tr>
+              <tr><td>NV-10491</td><td><span class="pill pill-amber">Pending</span></td><td><span class="pill pill-amber">In review</span></td><td>$0</td></tr>
+              <tr><td>NV-10490</td><td><span class="pill pill-green">Active</span></td><td><span class="pill pill-green">Verified</span></td><td>$8,250</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="glass p-5">
+          <h2 class="font-semibold mb-4">Modules</h2>
+          <ul class="text-sm space-y-2 text-slate-300">
+            <li>• Customer accounts & balances</li>
+            <li>• KYC verification status</li>
+            <li>• Deposits & withdrawals queue</li>
+            <li>• Portfolio allocations overview</li>
+            <li>• Transaction monitoring</li>
+            <li>• Compliance alerts & risk flags</li>
+            <li>• Support tickets</li>
+            <li>• Audit logs</li>
+          </ul>
+          <p class="text-xs text-slate-500 mt-4">Access restricted by role. All sensitive actions logged.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>

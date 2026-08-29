@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deposit & Withdrawal — NovaVest Capital (Demo)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{950:'#060a13',900:'#0b1120'}}}}}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-navy-950 text-slate-100">
+  <header class="site-header">
+    <div class="container-main flex items-center justify-between h-16">
+      <a href="../index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center font-bold text-sm">N</div>
+        <span class="font-semibold">NovaVest Capital</span>
+      </a>
+      <a href="dashboard.html" class="text-sm text-slate-400 hover:text-white">Back to dashboard</a>
+    </div>
+  </header>
+  <main class="py-12">
+    <div class="container-main max-w-2xl">
+      <div class="flex gap-2 mb-6">
+        <button data-tab="deposit-panel" data-tab-group="fund" class="px-4 py-2 rounded-full text-sm font-medium bg-blue-500/20 text-white">Deposit</button>
+        <button data-tab="withdraw-panel" data-tab-group="fund" class="px-4 py-2 rounded-full text-sm font-medium text-slate-400">Withdraw</button>
+      </div>
+      <div id="deposit-panel" data-panel-group="fund" class="glass p-6">
+        <h1 class="text-xl font-semibold mb-1">Deposit funds</h1>
+        <p class="text-sm text-slate-400 mb-6">Demo interface only. No real payments are processed.</p>
+        <div class="space-y-4">
+          <div><label>Amount (USD)</label><input type="number" class="input-field" placeholder="0.00" /></div>
+          <div>
+            <label>Payment method (placeholders)</label>
+            <select class="input-field">
+              <option>Bank transfer — [configure if legally supported]</option>
+              <option>Card — [configure if legally supported]</option>
+              <option>Cryptocurrency transfer — [configure if legally supported]</option>
+            </select>
+          </div>
+          <button type="button" class="btn-primary w-full justify-center" onclick="alert('Demo only. No payment is initiated. Production would integrate compliant payment processors and never show fake confirmation screens.')">Continue (Demo)</button>
+        </div>
+        <p class="text-xs text-slate-500 mt-4">Never create fake “payment confirmed” screens or fabricated transaction IDs in production messaging.</p>
+      </div>
+      <div id="withdraw-panel" data-panel-group="fund" class="glass p-6 hidden">
+        <h1 class="text-xl font-semibold mb-1">Withdraw funds</h1>
+        <p class="text-sm text-slate-400 mb-6">Demo interface. Available balance shown is illustrative.</p>
+        <div class="space-y-4">
+          <div class="rounded-xl bg-white/5 p-4 text-sm"><span class="text-slate-400">Available balance (demo):</span><span class="font-semibold ml-2">$5,096.00</span></div>
+          <div><label>Amount</label><input type="number" class="input-field" placeholder="0.00" /></div>
+          <div><label>Destination</label><input type="text" class="input-field" placeholder="Bank account / wallet address (demo)" /></div>
+          <div>
+            <label>Network (if crypto)</label>
+            <select class="input-field">
+              <option>N/A — fiat</option>
+              <option>Bitcoin network</option>
+              <option>Ethereum network</option>
+            </select>
+          </div>
+          <button type="button" class="btn-primary w-full justify-center" onclick="alert('Demo only. No withdrawal is submitted. Production requires identity confirmation, fraud checks, and audit logging.')">Request withdrawal (Demo)</button>
+        </div>
+        <p class="text-xs text-slate-500 mt-4">Processing status and confirmations would be handled by backend systems with appropriate controls.</p>
+      </div>
+    </div>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>

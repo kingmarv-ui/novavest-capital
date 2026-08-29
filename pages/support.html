@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — NovaVest Capital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{950:'#060a13',900:'#0b1120'}}}}}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-navy-950 text-slate-100">
+  <header class="site-header">
+    <div class="container-main flex items-center justify-between h-16">
+      <a href="../index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center font-bold text-sm">N</div>
+        <span class="font-semibold">NovaVest Capital</span>
+      </a>
+      <a href="faq.html" class="text-sm text-slate-400 hover:text-white">FAQ</a>
+    </div>
+  </header>
+  <main class="py-14">
+    <div class="container-main max-w-3xl">
+      <h1 class="text-3xl font-bold mb-3">Customer Support</h1>
+      <p class="text-slate-400 mb-8">We’re here to help. Support hours and contact details are placeholders.</p>
+      <div class="grid md:grid-cols-2 gap-5 mb-10">
+        <div class="glass p-5">
+          <h2 class="font-semibold mb-2">Live chat</h2>
+          <p class="text-sm text-slate-400 mb-4">Chat interface placeholder. Production would connect to a secure messaging system.</p>
+          <button class="btn-secondary text-sm" onclick="alert('Demo chat only. No live agent is connected.')">Open chat (Demo)</button>
+        </div>
+        <div class="glass p-5">
+          <h2 class="font-semibold mb-2">Support ticket</h2>
+          <p class="text-sm text-slate-400 mb-4">Submit a request. Tickets would be tracked in a backend system.</p>
+          <button class="btn-secondary text-sm" onclick="document.getElementById('ticket-form').classList.toggle('hidden')">Create ticket</button>
+        </div>
+      </div>
+      <div id="ticket-form" class="glass p-6 mb-8 hidden">
+        <h3 class="font-semibold mb-4">New support ticket</h3>
+        <form class="space-y-4" onsubmit="event.preventDefault(); alert('Demo only. Ticket is not submitted.');">
+          <div><label>Subject</label><input class="input-field" placeholder="Brief description" /></div>
+          <div><label>Message</label><textarea class="input-field" rows="4" placeholder="How can we help?"></textarea></div>
+          <button type="submit" class="btn-primary text-sm">Submit (Demo)</button>
+        </form>
+      </div>
+      <div class="glass p-6">
+        <h2 class="font-semibold mb-4">Contact form</h2>
+        <form class="space-y-4" onsubmit="event.preventDefault(); alert('Demo only. Message is not sent.');">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div><label>Name</label><input class="input-field" /></div>
+            <div><label>Email</label><input type="email" class="input-field" /></div>
+          </div>
+          <div><label>Message</label><textarea class="input-field" rows="4"></textarea></div>
+          <button type="submit" class="btn-primary text-sm">Send message (Demo)</button>
+        </form>
+        <p class="text-xs text-slate-500 mt-4">Support hours: [Insert hours, e.g. Mon–Fri 09:00–17:00 local time]. Email: [Insert support email]. Phone: [Insert if applicable].</p>
+      </div>
+    </div>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>
