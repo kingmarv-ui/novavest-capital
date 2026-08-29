@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — NovaVest Capital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{950:'#060a13',900:'#0b1120',800:'#111827'}}}}}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-navy-950 text-slate-100 min-h-screen flex flex-col">
+  <header class="site-header">
+    <div class="container-main flex items-center justify-between h-16">
+      <a href="../index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center font-bold text-sm">N</div>
+        <span class="font-semibold text-lg">NovaVest <span class="text-slate-400 font-normal">Capital</span></span>
+      </a>
+      <a href="register.html" class="text-sm text-slate-300 hover:text-white">Create account</a>
+    </div>
+  </header>
+  <main class="flex-1 flex items-center justify-center py-12 px-4">
+    <div class="w-full max-w-md">
+      <div class="glass p-8">
+        <h1 class="text-2xl font-bold mb-1">Sign in</h1>
+        <p class="text-sm text-slate-400 mb-6">Access your demo portfolio. No real credentials are verified or stored.</p>
+        <form onsubmit="handleDemoLogin(event)" class="space-y-4">
+          <div><label for="email">Email</label><input type="email" id="email" class="input-field" placeholder="you@example.com" required /></div>
+          <div><label for="password">Password</label><input type="password" id="password" class="input-field" placeholder="••••••••" required /></div>
+          <div class="flex items-center gap-2"><input type="checkbox" id="remember" class="checkbox-custom" /><label for="remember" class="mb-0 text-sm text-slate-300">Remember this device</label></div>
+          <button type="submit" class="btn-primary w-full justify-center">Sign in</button>
+        </form>
+        <div class="mt-5 flex items-center justify-between text-sm">
+          <a href="#" class="text-blue-400 hover:text-blue-300" onclick="alert('Demo: password reset would be handled by a secure backend.'); return false;">Forgot password?</a>
+          <span class="text-slate-500">2FA available</span>
+        </div>
+        <div class="mt-6 pt-5 border-t border-white/5">
+          <p class="text-xs text-slate-500 mb-3">Security features (production):</p>
+          <ul class="text-xs text-slate-400 space-y-1">
+            <li>• Two-factor authentication</li>
+            <li>• Session management & device alerts</li>
+            <li>• Encrypted transport (HTTPS required)</li>
+            <li>• No passwords stored in frontend</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center text-xs text-slate-500 mt-6">This is a frontend prototype. Authentication would connect to a secure backend service.</p>
+    </div>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>
