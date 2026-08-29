@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Account — NovaVest Capital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{950:'#060a13',900:'#0b1120',800:'#111827'}}}}}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="bg-navy-950 text-slate-100 min-h-screen">
+  <header class="site-header">
+    <div class="container-main flex items-center justify-between h-16">
+      <a href="../index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center font-bold text-sm">N</div>
+        <span class="font-semibold text-lg">NovaVest <span class="text-slate-400 font-normal">Capital</span></span>
+      </a>
+      <a href="login.html" class="text-sm text-slate-300 hover:text-white">Already have an account?</a>
+    </div>
+  </header>
+  <main class="py-10 px-4">
+    <div class="max-w-xl mx-auto">
+      <h1 class="text-2xl font-bold mb-2 text-center">Create an Account</h1>
+      <p class="text-sm text-slate-400 text-center mb-8">Complete the steps below. No data is submitted in this prototype.</p>
+      <div class="mb-8">
+        <div class="flex justify-between mb-2">
+          <div data-step-indicator="1" class="step-dot active">1</div>
+          <div data-step-indicator="2" class="step-dot pending">2</div>
+          <div data-step-indicator="3" class="step-dot pending">3</div>
+          <div data-step-indicator="4" class="step-dot pending">4</div>
+          <div data-step-indicator="5" class="step-dot pending">5</div>
+          <div data-step-indicator="6" class="step-dot pending">6</div>
+          <div data-step-indicator="7" class="step-dot pending">7</div>
+        </div>
+        <div class="h-1 bg-white/10 rounded-full overflow-hidden">
+          <div id="reg-progress" class="h-full bg-gradient-to-r from-blue-500 to-emerald-500 transition-all duration-300" style="width:0%"></div>
+        </div>
+      </div>
+      <form id="registration-form" class="glass p-6 md:p-8">
+        <div data-reg-step="1">
+          <h2 class="font-semibold mb-4">Step 1 — Personal details</h2>
+          <div class="space-y-4">
+            <div><label>Full name</label><input type="text" class="input-field" placeholder="Jane Doe" /></div>
+            <div><label>Email</label><input type="email" class="input-field" placeholder="jane@example.com" /></div>
+            <div><label>Phone number</label><input type="tel" class="input-field" placeholder="+1 555 000 0000" /></div>
+          </div>
+        </div>
+        <div data-reg-step="2" class="hidden">
+          <h2 class="font-semibold mb-4">Step 2 — Country of residence</h2>
+          <div>
+            <label>Country / region</label>
+            <select class="input-field">
+              <option value="">Select country</option>
+              <option>United States</option>
+              <option>United Kingdom</option>
+              <option>Canada</option>
+              <option>European Union (specify)</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <p class="text-xs text-slate-500 mt-3">Service availability depends on applicable laws and your location.</p>
+        </div>
+        <div data-reg-step="3" class="hidden">
+          <h2 class="font-semibold mb-4">Step 3 — Identity verification</h2>
+          <p class="text-sm text-slate-400 mb-4">In production, this step would initiate a secure KYC process with a licensed provider. No documents are uploaded in this demo.</p>
+          <div class="rounded-xl border border-dashed border-white/20 p-8 text-center text-slate-400 text-sm">Identity verification placeholder<br /><span class="text-xs">[Connect to KYC provider]</span></div>
+        </div>
+        <div data-reg-step="4" class="hidden">
+          <h2 class="font-semibold mb-4">Step 4 — Investment experience</h2>
+          <div class="space-y-3">
+            <label class="flex items-center gap-3 cursor-pointer"><input type="radio" name="exp" class="accent-blue-500" /> None / beginner</label>
+            <label class="flex items-center gap-3 cursor-pointer"><input type="radio" name="exp" class="accent-blue-500" /> Some experience with stocks</label>
+            <label class="flex items-center gap-3 cursor-pointer"><input type="radio" name="exp" class="accent-blue-500" /> Experience with stocks and crypto</label>
+            <label class="flex items-center gap-3 cursor-pointer"><input type="radio" name="exp" class="accent-blue-500" /> Professional / advanced</label>
+          </div>
+        </div>
+        <div data-reg-step="5" class="hidden">
+          <h2 class="font-semibold mb-4">Step 5 — Risk tolerance</h2>
+          <div class="space-y-3">
+            <label class="flex items-center gap-3 cursor-pointer"><input type="radio" name="risk" class="accent-blue-500" /> Low — prefer capital preservation</label>
+            <label class="flex items-center gap-3 cursor-pointer"><input type="radio" name="risk" class="accent-blue-500" /> Moderate — balanced growth and risk</label>
+            <label class="flex items-center gap-3 cursor-pointer"><input type="radio" name="risk" class="accent-blue-500" /> High — willing to accept significant volatility</label>
+            <label class="flex items-center gap-3 cursor-pointer"><input type="radio" name="risk" class="accent-blue-500" /> Very high — primarily digital assets</label>
+          </div>
+        </div>
+        <div data-reg-step="6" class="hidden">
+          <h2 class="font-semibold mb-4">Step 6 — Investment objectives</h2>
+          <div class="space-y-3">
+            <label class="flex items-center gap-3 cursor-pointer"><input type="checkbox" class="checkbox-custom" /> Capital preservation</label>
+            <label class="flex items-center gap-3 cursor-pointer"><input type="checkbox" class="checkbox-custom" /> Long-term growth</label>
+            <label class="flex items-center gap-3 cursor-pointer"><input type="checkbox" class="checkbox-custom" /> Exposure to technology sector</label>
+            <label class="flex items-center gap-3 cursor-pointer"><input type="checkbox" class="checkbox-custom" /> Exposure to digital assets</label>
+            <label class="flex items-center gap-3 cursor-pointer"><input type="checkbox" class="checkbox-custom" /> Income generation (where applicable)</label>
+          </div>
+        </div>
+        <div data-reg-step="7" class="hidden">
+          <h2 class="font-semibold mb-4">Step 7 — Terms & disclosures</h2>
+          <div class="space-y-3 text-sm">
+            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox" class="checkbox-custom mt-0.5" required /><span>I understand that investments involve risk and I may lose some or all of my capital.</span></label>
+            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox" class="checkbox-custom mt-0.5" required /><span>I understand that returns are not guaranteed.</span></label>
+            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox" class="checkbox-custom mt-0.5" required /><span>I understand that cryptocurrency is highly volatile.</span></label>
+            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox" class="checkbox-custom mt-0.5" required /><span>I have reviewed the applicable fees (or the fee schedule placeholders).</span></label>
+            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox" class="checkbox-custom mt-0.5" required /><span>I have read and agree to the <a href="terms.html" class="text-blue-400">Terms of Service</a> and <a href="privacy.html" class="text-blue-400">Privacy Policy</a>.</span></label>
+          </div>
+        </div>
+        <div class="flex justify-between mt-8 pt-4 border-t border-white/5">
+          <button type="button" id="reg-prev" class="btn-secondary text-sm py-2">Back</button>
+          <button type="button" id="reg-next" class="btn-primary text-sm py-2">Continue</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>
